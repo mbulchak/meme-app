@@ -44,7 +44,7 @@ export const TableBlock = () => {
         return <p>{getRandomIntInclusive()}</p>;
       case 'actions':
         return (
-          <Button className='bg-blue-500 text-white hover:bg-blue-600 rounded-xl' color='primary'>
+          <Button className='w-[50px] bg-blue-500 text-white hover:bg-blue-600 rounded-xl' color='primary'>
             Edit
           </Button>
         );
