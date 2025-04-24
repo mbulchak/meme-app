@@ -1,10 +1,20 @@
+import {Outlet, useNavigate} from 'react-router';
 import './App.css';
+import {Navigation} from './components/Navigation';
+import {useEffect} from 'react';
 
 function App() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate('/table');
+  }, []);
+
   return (
     <>
-      <h2>Hello World</h2>
-      <h3>dfsd</h3>
+      <Navigation />
+
+      <Outlet />
     </>
   );
 }
